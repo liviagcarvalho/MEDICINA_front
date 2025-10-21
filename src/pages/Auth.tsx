@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText } from "lucide-react";
+import logoFull from "@/assets/logo-full.png";
 
 export default function Auth() {
   const { signIn, signUp } = useAuth();
@@ -44,8 +44,8 @@ export default function Auth() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-background to-accent/10 p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-4 text-center">
-          <div className="mx-auto w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-            <FileText className="h-6 w-6 text-primary-foreground" />
+          <div className="mx-auto">
+            <img src={logoFull} alt="Centro Médico São José" className="h-20 w-auto" />
           </div>
           <div>
             <CardTitle className="text-2xl">Centro Médico São José</CardTitle>

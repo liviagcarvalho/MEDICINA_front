@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sidebar";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
+import logoIcon from "@/assets/logo-icon.png";
 
 const menuItems = [
   { title: "Home", url: "/", icon: Home },
@@ -27,9 +28,12 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarContent>
-        <div className="px-6 py-4">
-          <h1 className="text-base font-bold text-sidebar-foreground leading-tight">Centro Médico São José</h1>
-          <p className="text-xs text-sidebar-foreground/70">Gestão Documental</p>
+        <div className="px-6 py-4 flex items-center gap-3">
+          <img src={logoIcon} alt="Logo" className="h-10 w-auto" />
+          <div>
+            <h1 className="text-base font-bold text-sidebar-foreground leading-tight">Centro Médico São José</h1>
+            <p className="text-xs text-sidebar-foreground/70">Gestão Documental</p>
+          </div>
         </div>
 
         <SidebarGroup>
