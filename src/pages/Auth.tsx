@@ -48,8 +48,8 @@ export default function Auth() {
             <img src={logoFull} alt="Centro Médico São José" className="h-20 w-auto" />
           </div>
           <div>
-            <CardTitle className="text-2xl">Centro Médico São José</CardTitle>
-            <CardDescription>Sistema de Gestão Documental</CardDescription>
+            {/* <CardTitle className="text-2xl">Centro Médico São José</CardTitle> */}
+            <CardDescription className="text-1xl">Sistema de Gestão Documental</CardDescription>
           </div>
         </CardHeader>
         <CardContent>
