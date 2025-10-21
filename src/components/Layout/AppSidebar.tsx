@@ -28,7 +28,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <div className="px-6 py-4">
-          <h1 className="text-xl font-bold text-sidebar-primary">DocFlow</h1>
+          <h1 className="text-xl font-bold text-sidebar-foreground">Centro Médico São José</h1>
           <p className="text-xs text-sidebar-foreground/70">Gestão Documental</p>
         </div>
 
