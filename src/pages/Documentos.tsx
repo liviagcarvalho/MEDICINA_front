@@ -12,7 +12,7 @@ export default function Documentos() {
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold">Documentos</h1>
+            <h1 className="text-3xl font-bold text-primary-dark">Documentos</h1>
             <p className="text-muted-foreground">Gerencie todos os documentos do sistema</p>
           </div>
           <Button onClick={() => navigate("/documentos/novo")}>

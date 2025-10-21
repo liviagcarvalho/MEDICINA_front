@@ -11,7 +11,7 @@ export default function Home() {
     <MainLayout>
       <div className="space-y-8">
         <div>
-          <h1 className="text-3xl font-bold mb-2">Dashboard</h1>
+          <h1 className="text-3xl font-bold mb-2 text-primary-dark">Dashboard</h1>
           <p className="text-muted-foreground">Visão geral do sistema de gestão documental</p>
         </div>
 

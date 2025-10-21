@@ -9,7 +9,7 @@ export default function Ocorrencias() {
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold">Ocorrências</h1>
+            <h1 className="text-3xl font-bold text-primary-dark">Ocorrências</h1>
             <p className="text-muted-foreground">Acompanhe e gerencie ocorrências</p>
           </div>
           <Button>

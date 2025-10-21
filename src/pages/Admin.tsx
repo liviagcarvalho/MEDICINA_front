@@ -7,7 +7,7 @@ export default function Admin() {
     <MainLayout>
       <div className="space-y-6">
         <div>
-          <h1 className="text-3xl font-bold">Administração</h1>
+          <h1 className="text-3xl font-bold text-primary-dark">Administração</h1>
           <p className="text-muted-foreground">Configurações e gerenciamento do sistema</p>
         </div>
 

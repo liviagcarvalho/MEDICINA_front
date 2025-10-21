@@ -16,7 +16,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             <div className="flex h-16 items-center px-4 gap-4">
               <SidebarTrigger />
               <div className="flex-1">
-                <h2 className="text-lg font-semibold">Sistema de Gestão Documental</h2>
+                <h2 className="text-lg font-semibold text-primary-dark">Sistema de Gestão Documental</h2>
               </div>
             </div>
           </div>
