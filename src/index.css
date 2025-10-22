@@ -1,2 +1,133 @@
-/* Minimal CSS - styled-components handles all styling */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    --primary: 160 55% 15%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 160 50% 25%;
+    --primary-dark: 160 60% 10%;
+
+    --secondary: 0 0% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 40 50% 55%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 70% 55%;
+    --warning-foreground: 0 0% 15%;
+
+    --info: 160 55% 20%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 160 55% 15%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 160 55% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 40 50% 55%;
+    --sidebar-primary-foreground: 160 55% 15%;
+    --sidebar-accent: 160 50% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 160 50% 25%;
+    --sidebar-ring: 40 50% 55%;
+
+    /* Status colors */
+    --status-rascunho: 40 70% 65%;
+    --status-revisao: 38 70% 55%;
+    --status-aprovada: 160 55% 20%;
+    --status-arquivada: 0 0% 45%;
+
+    /* Priority colors */
+    --priority-baixa: 0 0% 45%;
+    --priority-media: 38 70% 55%;
+    --priority-alta: 25 80% 50%;
+    --priority-urgente: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 160 55% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 160 50% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 160 50% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 160 50% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 160 45% 35%;
+    --primary-dark: 160 55% 18%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 40 50% 55%;
+    --accent-foreground: 160 55% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 70% 55%;
+    --warning-foreground: 160 55% 8%;
+
+    --info: 160 50% 30%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 40 50% 55%;
+
+    --sidebar-background: 160 55% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 40 50% 55%;
+    --sidebar-primary-foreground: 160 55% 15%;
+    --sidebar-accent: 160 50% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 160 50% 25%;
+    --sidebar-ring: 40 50% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
