@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from "@/contexts/AuthContext";
 import Auth from "./pages/Auth";
 import Home from "./pages/Home";
 import Documentos from "./pages/Documentos";
+import DocumentoDetalhes from "./pages/DocumentoDetalhes";
 import Ocorrencias from "./pages/Ocorrencias";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
@@ -78,6 +79,14 @@ const App = () => (
               element={
                 <ProtectedRoute>
                   <Documentos />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/documentos/:id"
+              element={
+                <ProtectedRoute>
+                  <DocumentoDetalhes />
                 </ProtectedRoute>
               }
             />
